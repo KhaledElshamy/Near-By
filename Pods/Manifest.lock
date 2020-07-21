@@ -1,0 +1,54 @@
+PODS:
+  - Alamofire (5.0.0-rc.3)
+  - JGProgressHUD (2.1)
+  - KeychainSwift (19.0.0)
+  - Kingfisher (4.10.1)
+  - PINCache (3.0.1-beta.8):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.8)
+    - PINCache/Core (= 3.0.1-beta.8)
+  - PINCache/Arc-exception-safe (3.0.1-beta.8):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.8):
+    - PINOperation (~> 1.1.1)
+  - PINOperation (1.1.2)
+  - PINRemoteImage (3.0.0):
+    - PINRemoteImage/PINCache (= 3.0.0)
+  - PINRemoteImage/Core (3.0.0):
+    - PINOperation
+  - PINRemoteImage/PINCache (3.0.0):
+    - PINCache (= 3.0.1-beta.8)
+    - PINRemoteImage/Core
+  - ReachabilitySwift (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire (= 5.0.0-rc.3)
+  - JGProgressHUD
+  - KeychainSwift
+  - Kingfisher
+  - PINRemoteImage
+  - ReachabilitySwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - JGProgressHUD
+    - KeychainSwift
+    - Kingfisher
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+    - ReachabilitySwift
+
+SPEC CHECKSUMS:
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  JGProgressHUD: aa403e9a5b45cae98903c4600cccdd98c0c3ec90
+  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  PINCache: 534fd41d358d828dfdf227a0d327f3673a65e20b
+  PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
+  PINRemoteImage: e2b89e19fb6e77ffc099f9d9f3b3fe1745e3f9f9
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+
+PODFILE CHECKSUM: e5605ea5e3c1107681d791c309c2954d2dd4dcd7
+
+COCOAPODS: 1.9.1
