@@ -39,7 +39,8 @@ class PlacesVC: BaseVC<PlacesView> {
         case .singleUpdate:
             currentMode = .realtime
             self.mainView.navBar.mode.text = "realtime"
-            locationManager?.allowsBackgroundLocationUpdates = true
+            locationManager?.distanceFilter = 500
+            getUserLocation()
         case .realtime:
             currentMode = .singleUpdate
             self.mainView.navBar.mode.text = "Single Update"
@@ -81,7 +82,7 @@ class PlacesVC: BaseVC<PlacesView> {
         locationManager = CLLocationManager()
         locationManager?.delegate = self
         locationManager?.desiredAccuracy = kCLLocationAccuracyBest
-//        locationManager?.allowsBackgroundLocationUpdates = true
+        CLLocationManager.authorizationStatus()
         locationManager?.requestAlwaysAuthorization()
         locationManager?.startUpdatingLocation()
     }
